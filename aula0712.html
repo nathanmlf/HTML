@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Formulários (07/12/2023)</title>
+</head>
+    <body>
+        <h2>Aula sobre formulários!</h2>
+            <form action="" method="GET">
+                <h3>Login</h3>
+                    <input type="email" name="email" placeholder="E-mail" required size="40">   
+                    <input type="password" name="senha" placeholder="Senha" required>            
+            <hr>
+                <p>Pressione o botão:</p>
+                    <input type="button" name="botão" onclick="alert('Olá!')" value="Clique aqui!">
+            <hr>
+                <p>Qual é o seu time com 4 letras favorito?</p>
+                    <input type="text" name="timeFavorito" maxlength="4">
+            <hr>
+                <p>Pra qual time você torce no Rio de Janeiro?</p>
+                    <input type="radio" name="time" value="Flamengo" checked>Flamengo<br>
+                    <input type="radio" name="time" value="Vasco">Vasco<br>
+                    <input type="radio" name="time" value="Botafogo">Botafogo<br>
+                    <input type="radio" name="time" value="Fluminense">Fluminense
+            <hr>
+                <p>Quais são os maiores times do Brasil?</p>
+                    <input type="checkbox" name="time1" value="São Paulo">São Paulo<br>
+                    <input type="checkbox" name="time2" value="Palmeiras">Palmeiras<br>
+                    <input type="checkbox" name="time3" value="Flamengo" checked>Flamengo<br>
+                    <input type="checkbox" name="time4" value="Santos" disabled>Santos
+            <hr>
+                <p>Escolha seu número favorito entre 1 e 5</p>
+                    <input type="number" name="númeroFavorito" min="1" max="5">
+                <p>Que dia é hoje?</p>
+                    <input type="date" name="data">
+                <p>Qual sua cor favorita?</p>
+                    <input type="color" name="cor">
+            <hr>
+                <p>Leia o poema:</p>
+                    <textarea name="poema" rows="1" cols="211" readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac semper diam, id euismod dolor.</textarea>
+            <hr>
+                <p>Escolha um estádio para visitar:</p>
+                    <select value="Estádios"> 
+                        <option value="Maracanã">Maracanã</option>
+                        <option value="Mineirão">Mineirão</option>
+                        <option value="Itaquerão">Itaquerão</option>
+                        <option value="Engenhão">Engenhão</option>
+                    </select>
+            <hr>
+                <p>Limpe suas escolhas:</p>
+                    <input type="reset" name="resetar" value="Resetar"> 
+            <hr>
+                <p>Envie suas escolhas:</p>
+                    <input type="submit" name="enviar" value="Enviar!">
+            </form>
+    </body>
+</html>

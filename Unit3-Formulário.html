@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta user="Nathan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 03 - Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <h2>Elementos de um Formulário</h2>
+        <form action="" method="GET">
+            <lable>Nome:</lable>
+            <input type="text" name="nome" value="Nathan"><br>
+            <lable>Senha:</lable>
+            <input type="password" name="senha"><br>
+        <hr>
+            <p>Para qual time você torce?</lable></p>
+            <input type="radio" name="time" value="Brasil" checked>Brasil<br>
+            <input type="radio" name="time" value="Alemanha">Alemanha<br>
+            <input type="radio" name="time" value="Uruguai">Uruguai<br>
+            <input type="radio" name="time" value="Argentina">Argentina<br>
+        <hr>
+            <p>Quais são seus esportes preferidos?</lable></p>
+            <input type="checkbox" name="esporte1" value="Vôlei">Vôlei<br>
+            <input type="checkbox" name="esporte2" value="Futebol">Futebol<br>
+            <input type="checkbox" name="esporte3" value="Basquete">Basquete<br>
+            <input type="checkbox" name="esporte4" value="Ciclismo">Ciclismo<br>
+        <hr>
+            <p>Qual sua cor favorita?</p>
+            <input type="color" name="cor">
+        <hr>
+            <p>Que dia é hoje?</p>
+            <input type="date" name="data">
+        <hr>
+            <p>Que dia é hoje e que horas são?</p>
+            <input type="datetime-local" name="horaData">
+        <hr>
+            <p>Digite seu email abaixo:</p>
+            <input type="email" name="email" value="nathanmlf@hotmail.com">
+        <hr>
+            <p>Envie o seu arquivo clicando no botão abaixo:</p>
+            <input type="file" name="arquivo"> 
+        <hr>
+            <p>Escolha seu número favorito entre 1 e 10:</p>
+            <input type="number" name="quantidadeLimitada" min="1" max="10"><br>
+            <p>Agora escolha seu número favorito entre todos os números:</p>
+            <input type="number" name="quantidade">
+        <hr>
+            <p>Leve a barrinha para o quão satisfeito você está com o seu dia, sendo o início 0 e o final 10.</p>
+            <input type="range" name="pontosLimitados" min="0" max="10"><br>
+            <p>Agora faça a mesma coisa sem um limite estabelecido.</p>
+            <input type="range" name="pontos">
+        <hr>
+            <p>Envie o seu projeto:</p>
+            <input type="submit" name="enviar">
+        <hr>
+            <p>Limpar minhas escolhas</p>
+            <input type="reset" name="resetar">
+        <hr>
+            <p>Escolha seu jogo preferido de RPG:</p>
+            <select name="jogos">
+                <option value="Skyrim" selected>Skyrim</option>
+                <option value="TheWitcher3">The Witcher 3</option>
+                <option value="Persona5">Persona 5</option>
+                <option value="Cyberpunk2077">Cyberpunk 2077</option>
+            </select>
+        <hr>
+            <p>Leia o poema:</p>
+            <textarea name="poema" rows="1" cols="254" readonly>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique blandit orci sed viverra. Etiam pellentesque ullamcorper mattis. Cras ut aliquam diam. Oi.
+            </textarea>
+        <hr>
+            <button type="button" onclick="alert('Olá Mundo!')">Clique aqui!</button>
+        <hr>
+            <button type="button" onclick="alert('Teste')" disabled>Desativado</button>
+        </form>
+    </body>
+</html>

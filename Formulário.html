@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta user="Nathan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Elementos de um Formulário</h2>
+    <form method="GET">
+        <label>Nome:</label>
+        <input type="text" name="name"><br>
+        <label>Senha:</label>
+        <input type="password" name="senha">
+        <hr>
+        <p>Para qual time você torce?</p>
+        <input type="radio" name="time" value="Brasil" checked>Brasil
+        <input type="radio" name="time" value="Argentina">Argentina
+        <input type="radio" name="time" value="Chile">Chile
+        <input type="radio" name="time" value="Uruguai">Uruguai
+        <hr>
+        <p>Quais são os seus esportes preferidos?</p>
+        <input type="checkbox" name="esporte1" value="Futebol">Futebol<br> 
+        <input type="checkbox" name="esporte2" value="Basquete">Basquete<br>
+        <input type="checkbox" name="esporte3" value="Vôlei">Vôlei<br>
+        <input type="checkbox" name="esporte4" value="Peteca">Peteca
+        <hr>
+        <p>Qual é a sua cor preferida?</p>
+        <input type="color" name="cor">
+        <hr>
+        <p>Que dia é hoje?</p>
+        <input type="date" name="data">
+        <hr>
+        <p>Que dia é hoje?</p>
+        <input type="datetime-local" name="datalocal">
+        <hr>
+        <input type="email" name="email">
+        <input type="file" name="arquivo">
+    </form>
+</body>
+</html>
